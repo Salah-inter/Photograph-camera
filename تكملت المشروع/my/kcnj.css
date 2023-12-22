@@ -1,0 +1,87 @@
+*{
+    direction: rtl;
+}
+body{
+    background-color: #203f3e;
+    color: #fff;
+
+}
+h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.1em;
+color: coral;    
+}
+.rules-1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.5);
+    margin: 10px;
+}
+.rules-1 h2{
+    color: coral;    
+
+}
+.rules-img123{
+    
+    position: relative;
+    height: 230px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 5px lightgrey;
+    cursor: pointer;
+
+   /* content: "";
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    border-radius: 10px;
+    height: 0;
+    background-color: rgba(0, 0, 0,.4);
+    transition: .3s;*/
+}
+.rules-img img::before {
+    content: "PHOTO GALLERY";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(255, 255, 255);
+    font-size: 22px;
+    font-weight: bold;
+    
+    margin-top: 100px;
+    opacity: 0;
+    transition: .3s;
+    transition-delay: .2s;
+    z-index: 1;
+}
+.rules-img img::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    border-radius: 10px;
+    height: 0;
+    background-color: rgba(0, 0, 0,.4);
+    transition: .3s;
+}
+
+
+img{
+width: 80%;
+}
+
+@media  (max-width:1150px){
+    .rules{
+flex-direction: column;
+justify-content: center;
+    }
+    .rules .rules-p , .rules .rules-img{
+        width: 80%;
+    }
+    
+}

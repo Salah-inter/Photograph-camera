@@ -1,0 +1,156 @@
+* {
+    direction: rtl;
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #203f3e;
+}
+
+h1 {
+    color: coral;
+    padding: 20px;
+    margin-top: 100px;
+    justify-content: center;
+    display: flex;
+    
+}
+
+h2 {
+    color: coral;
+    padding: 20px;
+    margin-top: 100px;
+    justify-content: right;
+    display: flex;
+}
+
+
+p {
+
+    margin: 0;
+    padding: 23px;
+    font-size: x-large;
+    font-weight: 600;
+width: 90%;
+
+}
+
+
+
+
+
+.container {
+
+    margin: inherit;
+    padding: 40px;
+    font-size: larger;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    font-style: oblique;
+
+
+}
+
+hr {
+
+
+    width: 70;
+
+
+}
+
+.tree {
+
+    font-weight: 700;
+    font-size: larger;
+    display: grid;
+
+
+}
+
+.hhh {
+    display: inline-block;
+    color: #fff;
+    background-color: black;
+    transition: 0.7s ease;
+    padding: 4px;
+
+}
+
+.hhh:hover {
+    border: 3px solid #fff;
+    transform: scale(1.1);
+    font-size: 1.3em;
+    padding: 8px;
+}
+
+.first {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.208);
+}
+
+.first-img {
+    width: 40%;
+}
+
+.first-img img {
+    width: 400px;
+}
+
+.first-p {
+    font-size: 18px;
+    line-height: 50px;
+    margin: 10px 0;
+    width: 100%;
+    word-spacing: 2px;
+    line-height: 26px;
+
+
+}
+h3{
+margin: 22px;
+padding: 40px;
+font-size: larger;
+font-weight: 900;
+font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+text-align: right;
+display: flex;
+   
+}
+
+.rose{
+
+    font-size: 18px;
+    line-height: 20px;
+    margin: 50px 0;
+    width: 55%;
+    word-spacing: 2px;
+    line-height: 28px;
+    border: 3px solid rgb(29, 15, 15);
+    background-color: rgba(255, 255, 255, 0.208);
+}
+
+
+
+
+@media(min-width: 950px) and (max-width: 1150px) {
+    .first-img img {
+        width: 250px;
+    }   
+}
+
+@media(max-width: 950px) {
+    .container{
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .first-img , .first-p{
+        width: 80%;
+    }   
+}
